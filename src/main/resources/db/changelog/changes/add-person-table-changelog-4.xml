@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-    <include file="/db/changelog/changes/create-person-table-changelog-1.xml"/>
-    <include file="/db/changelog/changes/insert-person-table-changelog-2.xml"/>
-    <include file="/db/changelog/changes/update-person-table-precondition-3.xml"/>
-    <include file="/db/changelog/changes/add-person-table-changelog-4.xml"/>
+    <changeSet author="admin" id="4">
+        <addColumn tableName="employee">
+            <column name="created_date" type="datetime" valueDate="current_datetime" defaultValueDate="current_datetime"/>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>
