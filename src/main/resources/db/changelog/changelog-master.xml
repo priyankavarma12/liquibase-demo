@@ -7,4 +7,8 @@
     <include file="/db/changelog/changes/insert-person-table-changelog-2.xml"/>
     <include file="/db/changelog/changes/update-person-table-precondition-3.xml"/>
     <include file="/db/changelog/changes/add-person-table-changelog-4.xml"/>
+   <!-- <include file="/db/changelog/changes/v1_create.sql"/>
+    <include file="/db/changelog/changes/v2_insert.sql"/>
+    <include file="/db/changelog/changes/v3_update.sql"/>
+    <include file="/db/changelog/changes/v4_alter.sql"/>-->
 </databaseChangeLog>
